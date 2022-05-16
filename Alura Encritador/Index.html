@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Codificador de Texto</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="Style.css" />
+        
+    </head>
+    <body>
+        <div class="principal">
+            <img class="logo" src="candado.jpeg" />
+            <h1 class="titulo">Codificador de Texto</h1>
+        </div>
+
+    
+            <div class="cuerpo">
+            <textarea class="texto-entrada" type="text" name="caja" id="caja" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="encrypt_decrypt_container">
+                <img src="warning.png" />
+                <p class="input_warning">Sólo letras minúsculas y sin acentos</p>
+                </div>
+             <div class="encrypt_decrypt_buttons"></div>
+            <button class="btn" type="button" value="encriptar!" id="btn-encriptar">Encriptar</button>
+            <button class="btn" type="button" value="desencriptar!" id="btn-desencriptar">Desencriptar</button>
+        </div>
+    </div>
+    </div>
+        
+    <section class="dc">
+    <div class="result_box">
+    <h5 id="">Mensaje encriptado:</h5>
+     <textarea class="textoSalida" type="text" id="msg"></textarea>
+        <div id="notFound">
+            <img class="img-busqueda" src="question.gif" alt="" />
+            <h5>Ningún mensaje fue encontrado</h5>
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+
+        <button class="btn" type="button" value="copiar" id="copy">Copiar</button>
+    
+    <script src="Button.js"></script>
+    <script src="copy.js"></script>
+    </body>
+<hr class="footer_hr" />
+<footer>
+<div>
+  <span>© <span ></span> Emmanuel A.M</span>
+</div>
+</html>
